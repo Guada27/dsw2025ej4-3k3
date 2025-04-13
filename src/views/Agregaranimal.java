@@ -1,7 +1,6 @@
 package views;
 
 
-
 import domain.Carnivoro;
 import domain.Especie;
 import domain.Herbivoro;

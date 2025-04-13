@@ -15,6 +15,7 @@ public class Controlador {
     public static MenuPrincipalView menuanimales;
 
 
+
     public static void inicio()
     {
         new MenuPrincipalView().setVisible(true);
@@ -51,6 +52,7 @@ public class Controlador {
     
     
     public static void salir(MenuPrincipalView vista)
+
     {
         vista.dispose();
     }
