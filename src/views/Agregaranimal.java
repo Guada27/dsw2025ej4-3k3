@@ -1,9 +1,10 @@
-
 package views;
+
 
 import domain.Carnivoro;
 import domain.Especie;
 import domain.Herbivoro;
+import domain.Pais;
 import domain.Sector;
 import domain.TipoAlimentacion;
 import java.awt.event.ActionEvent;
@@ -220,16 +221,19 @@ public class Agregaranimal extends javax.swing.JFrame {
             try {
                 Controlador.guardarAnimal(new Herbivoro(this.getEdadtxt(), this.getPesotxt(), this.getEspecietxt(), this.getSectortxt(), this.getValortxt(), this.getPaistxt()));
                 System.out.println("Animal fue agregado");
+                JOptionPane.showMessageDialog(null, "Animal agregado exitosamente", "Animal agregado", JOptionPane.INFORMATION_MESSAGE);
             } catch (Exception ex) {
                 ex.printStackTrace();
+                JOptionPane.showMessageDialog(null, "Ingrese correctamente el animal", "Error combinacion de datos invalida", JOptionPane.ERROR_MESSAGE);
             }
         }
         else if(tipotxt.getSelectedItem().toString().equals(TipoAlimentacion.CARNIVORO.toString())){
             try{
                 Controlador.guardarAnimal(new Carnivoro(this.getEdadtxt(), this.getPesotxt(), this.getEspecietxt(), this.getSectortxt(), this.getPaistxt()));
-                System.out.println("Animal fue agregado");
+                 JOptionPane.showMessageDialog(null, "Animal agregado exitosamente", "Animal agregado", JOptionPane.INFORMATION_MESSAGE);
             }catch(Exception ex){
                 ex.printStackTrace();
+                 JOptionPane.showMessageDialog(null, "Ingrese correctamente el animal", "Error combinacion de datos invalida", JOptionPane.ERROR_MESSAGE);
             }
         }
        
@@ -267,6 +271,22 @@ public class Agregaranimal extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Agregaranimal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>

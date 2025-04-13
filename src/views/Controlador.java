@@ -12,12 +12,13 @@ import javax.swing.table.DefaultTableModel;
 public class Controlador {
     
     public static Agregaranimal agregaranimales;
-    public static Menuanimales menuanimales;
+    public static MenuPrincipalView menuanimales;
+
 
 
     public static void inicio()
     {
-        new Menuanimales().setVisible(true);
+        new MenuPrincipalView().setVisible(true);
     }
     
     public static TipoAlimentacion[] getTiposAlimentacion(){
@@ -50,12 +51,13 @@ public class Controlador {
     }
     
     
-    public static void salir(Menuanimales vista)
+    public static void salir(MenuPrincipalView vista)
+
     {
         vista.dispose();
     }
     
-    public static void vistaagregar (Menuanimales vista){
+    public static void vistaagregar (MenuPrincipalView vista){
         vista.dispose();
         new Agregaranimal().setVisible(true);
     }
@@ -63,18 +65,18 @@ public class Controlador {
     public static void volver(Agregaranimal vista)
     {
         vista.dispose();
-        new Menuanimales().setVisible(true);
+        new MenuPrincipalView().setVisible(true);
     }
     
     
-    public static void vistalista(Menuanimales vista){
+    public static void vistalista(MenuPrincipalView vista){
             vista.dispose();
             new ListarAnimalesView().setVisible(true);
     } 
 
     public static void volveer (ListarAnimalesView vista){
           vista.dispose();
-           new Menuanimales().setVisible(true);
+           new MenuPrincipalView().setVisible(true);
     }
     
     
